@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title
+      = yield(:title) 
+      |  | #{Rails.application.class.parent_name}
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+
+  body
+    -flash.each do |message_type, message|
+      div class="alert alert-#{message_type}"
+        = message
+      br
+    = yield
+    br
+    = debug(params) if Rails.env.development?
