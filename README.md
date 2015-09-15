@@ -5,7 +5,7 @@ A repo for the challenges from Sept 15, 2015
 
 Become an admin!
 
-https://immense-lake-6624.herokuapp.com
+https://canihazadmin.herokuapp.com
 
 ## ROBOTS ONLY
 
